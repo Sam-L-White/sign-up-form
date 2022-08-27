@@ -1,3 +1,50 @@
-h1{
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: flex;
+    height: 100vh;
+    width: 90vw;
+    
+    margin-right: 100px;
+}
+
+.image-container{
+    flex: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.cheese-image{
+    width: 40vw;
+    height: 100%;
+}
+
+.form-container{
+    flex: auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+.form-container form{
+    width: 60vw;
+    
+    
+}
+
+.title-background{
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    color: white;
     font-family: "Aboreto";
+    font-size: 7rem;
+    text-align: center;
 }
