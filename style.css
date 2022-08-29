@@ -1,3 +1,51 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -57,9 +105,10 @@
 
 .form{
     display: flex;
-    height: 20vh;
+    height: 300px;
     width: 60vw;
     flex-direction: row;
+    border: 1;
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -106,14 +155,14 @@
     height: 5vh;
     background-color: black;
     border-color: bisque;
-    
+    margin-top: 50px;
     font-size: 1.5rem;
     border-radius: 20px;
     
 }
 
 .last-paragraph p{
-    margin-top: 3vh;
+    margin-top: 50px;
 }
 .columns{
     display: flex;
@@ -156,8 +205,40 @@
     font-family: "Aboreto";
 }
 
+input{
+    border-color: rgb(94, 66, 34);
+    border-radius: 25px;
+    background: none;
+    height: 1.5rem;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    border-style: solid;
+    border-width: 3px;
+}
+  
+input:focus{
+    border-color: bisque;
+    border-width: 4px;
+}
 
 
+input:focus:valid{
+    border-color: rgb(2, 231, 90);
+    border-width: 4px;
+    border-style: solid;
+}
 
+input:invalid:focus{
+    border-color: red;
+}
 
+span::after {
+    color: white;
+    background-color: black;
+    content: "*";
+    left: -70px;
+}
 
+.required-p{
+    margin-bottom: 20px;
+}
